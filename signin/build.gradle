@@ -1,0 +1,27 @@
+apply from: "$project.rootDir/base_use_case.gradle"
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+dependencies {
+    implementation libraries.constraintLayout
+    implementation libraries.material
+
+    //hilt
+    implementation libraries.hilt
+    kapt libraries.hiltCompiler
+
+    // navigation component
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUi
+
+    // facebook & cms mobile services
+    implementation libraries.facebookLogin
+    implementation libraries.cmsAuthKit
+    implementation libraries.cmsAccountKit
+    implementation libraries.cmsSafetyKit
+
+    implementation project(':base')
+    implementation project(':core')
+    implementation project(':data')
+}

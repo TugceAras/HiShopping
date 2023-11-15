@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hms.lib.commonmobileservices.mapkit.CommonMapView
+            android:id="@+id/mapViewCourierTrack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hms_api_key="@string/hms_api_key" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

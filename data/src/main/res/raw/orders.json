@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "productId": 1,
+    "address": "Fulya, Mevlüt Pehlivan Yanı Sokağı 11-1, 34394 Şişli/İstanbul",
+    "orderStatus": "IN_PROGRESS"
+  },
+  {
+    "id": 2,
+    "productId": 2,
+    "address": "Eşref Efendi Sk. 135-95 Bozkurt 34375 Şişli/İstanbul",
+    "orderStatus": "TRANSPORT"
+  },
+  {
+    "id": 3,
+    "productId": 3,
+    "address": " Levhacı Sok. 7-1 Vişnezade 34357 Beşiktaş/İstanbul",
+    "orderStatus": "DELIVERED"
+  }
+]

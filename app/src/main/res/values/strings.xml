@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name" translatable="false">HiShopping</string>
+    <string name="google_device_verification_api_key" translatable="false">AIzaSyBARpjIdQoaqlSLP0dG3wZVuAH4Tg7N6ig</string>
+    <string name="app_id" translatable="false">103896847</string>
+    <string name="facebook_app_id" translatable="false">391268885356294</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb391268885356294</string>
+
+    <!--Fragment Labels: -->
+    <string name="fragment_categories" translatable="false">categoriesFragment</string>
+    <string name="fragment_detail" translatable="false">detailFragment</string>
+    <string name="fragment_comments" translatable="false">commentsFragment</string>
+    <string name="fragment_explore">exploreFragment</string>
+    <string name="fragment_my_orders">myOrdersFragment</string>
+    <string name="fragment_profile">profileFragment</string>
+    <string name="fragment_my_cart">myCartFragment</string>
+
+    <!-- 1) Error Strings: -->
+    <string name="unexpected_error">An error occurred</string>
+
+    <!-- 1.0) General -->
+    <string name="error_no_root_device_error">You need to install Google or Huawei Mobile Services to run application.</string>
+
+    <!-- 1.1) Search Page: -->
+    <string name="error_search_feature_not_available">This feature is not yet available.</string>
+    <string name="error_search_feature_not_available_gms">This feature does not work on GMS devices yet.</string>
+
+    <!-- 1.2) Details Page: -->
+    <string name="error_details_no_property">Properties not specified</string>
+
+
+    <!-- 1) UI Strings: -->
+
+    <!-- 1.0) General -->
+    <string name="add_to_cart">Add to cart</string>
+    <string name="search_product">Search product</string>
+    <string name="comment">Comment</string>
+    <string name="price">%1$s$</string>
+    <string name="root_device_info">Root detection result: OK</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="buy">Buy</string>
+    <string name="your_order_added_cart">Product has been added to your cart</string>
+    <string name="go_to_card">Go to my cart</string>
+    <string name="continue_shopping">Continue shopping</string>
+
+    <!-- 1.1) Add Comment Page: -->
+    <string name="add_comment_size" translatable="false">%1$s/2000</string>
+    <string name="add_comment_anonymous">Anonymous</string>
+    <string name="add_comment_rate_comment">You can rate or comment the product below.</string>
+    <string name="add_comment_affordable_quality">The product is both affordable and a quality product as it seems.</string>
+    <string name="add_comment_user_agreement">I accept the User Agreement to add comments.</string>
+    <string name="add_comment_submit">Submit Comment</string>
+    <string name="add_comment_product_successfully">Product comment has been made successfully.</string>
+    <string name="add_comment_accept_user_agreement">Please accept the user agreement to add comments.</string>
+    <string name="add_comment_price" translatable="false">%1$s $</string>
+
+    <!-- 1.2) Comment Page: -->
+    <string name="comment_size" translatable="false">Comments(${%1$s})</string>
+    <string name="comment_5" translatable="false">5</string>
+    <string name="comment_4" translatable="false">4</string>
+    <string name="comment_3" translatable="false">3</string>
+    <string name="comment_2" translatable="false">2</string>
+    <string name="comment_1" translatable="false">1</string>
+    <string name="comment_0" translatable="false">0</string>
+    <string name="comment_add_comment">Add comment</string>
+
+    <!-- 1.3) Details Page: -->
+    <string name="details_see_all_comments">See all comments (${%1$s})</string>
+
+    <!-- 1.4) Explore Page: -->
+    <string name="explore_campaigns">Campaigns</string>
+    <string name="explore_advised_for_you">Advised For You</string>
+    <string name="explore_see_all">See All</string>
+    <string name="explore_try_with_ar">Try with ar</string>
+    <string name="explore_brands">Brands</string>
+    <string name="explore_last_visited_products">Last Visited Products</string>
+    <string name="explore_discounted_products">Discounted Products</string>
+
+    <!-- 1.5) Profile Page: -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_stores">Stores</string>
+    <string name="profile_my_orders">My Orders</string>
+    <string name="profile_my_credit_cards">My Credit Cards</string>
+    <string name="profile_profile_editing">Profile Editing</string>
+    <string name="profile_my_addresses">My Addresses</string>
+    <string name="profile_call_center">Call Center</string>
+    <string name="profile_sign_out">Sign Out</string>
+    <string name="profile_sign_in">Sign in</string>
+    <string name="profile_welcome">Welcome</string>
+
+    <!-- 1.6) Profile Edit Page: -->
+    <string name="profile_edit">Profile</string>
+    <string name="profile_edit_change_email">Change Email</string>
+    <string name="profile_edit_change_password">Change password</string>
+    <string name="profile_edit_username">Full Name</string>
+    <string name="profile_edit_change_username">Change Username</string>
+    <string name="profile_edit_change_photo">Change Photo</string>
+    <string name="profile_edit_enter_code">Enter Code</string>
+    <string name="profile_edit_get_code_email">Get Code E-mail</string>
+    <string name="profile_edit_email_empty_message">Email can not be empty</string>
+    <string name="profile_edit_change_password_empty_message">Password and verify code can not be empty</string>
+    <string name="profile_edit_change_email_empty_message">Email and verify code can not be empty</string>
+    <string name="profile_edit_full_name_empty_message">Full name can not be empty</string>
+    <string name="profile_edit_code_sent_message">Code sent</string>
+    <string name="profile_edit_password_change_message">Password changed</string>
+    <string name="profile_edit_email_change_message">Email changed</string>
+    <string name="profile_edit_change_user_info_message">User updated</string>
+
+    <!-- 1.7) Empty Cart Page: -->
+    <string name="empty_cart_description">There is not any item in your cart</string>
+
+    <!-- 1.8) Product Detail Bottom Sheet: -->
+    <string name="product_detail_description">Description:</string>
+    <string name="product_detail_properties">Product Properties</string>
+    <string name="product_detail_comments_default">Comments(0)</string>
+    <string name="product_details_comments">Comments(%1$s)</string>
+    <string name="product_detail_see_all_comments_default">See all comments(0)</string>
+    <string name="product_details_see_all_comments">See all comments(%1$s)</string>
+    <string name="product_details_categories">Categories</string>
+
+    <!-- 1.9) My Cart Page: -->
+    <string name="my_cart_are_you_sure_to_buy_all_items">Are you sure to buy all items?</string>
+
+    <!-- 2.0) Category Page: -->
+    <string name="category_tag">S_P_%1$s</string>
+    <string name="category_price">Price: %1$s%2$s</string>
+
+    <!-- 2.1) Favorite Page: -->
+    <string name="favorite_price">Price: %s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

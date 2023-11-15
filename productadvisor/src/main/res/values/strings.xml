@@ -1,0 +1,7 @@
+<resources>
+    <!-- 1) UI Strings: -->
+
+    <!-- 1.1) Product Advisor Page -->
+    <string name="product_advisor_price">Price: %1$s%2$s</string>
+
+</resources>

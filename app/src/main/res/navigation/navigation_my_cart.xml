@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_cart_graph"
+    app:startDestination="@id/my_cart">
+
+    <fragment
+        android:id="@+id/my_cart"
+        android:name="com.hms.referenceapp.hishopping.app.mycart.presentation.MyCartFragment"
+        android:label="@string/fragment_my_cart"
+        tools:layout="@layout/fragment_my_cart">
+            <action
+            android:id="@+id/action_my_cart_to_my_orders_graph"
+            app:destination="@id/my_orders_graph"
+            app:popUpTo="@navigation/navigation_my_cart"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+
+    <include app:graph="@navigation/navigation_my_orders" />
+
+</navigation>

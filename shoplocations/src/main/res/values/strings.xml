@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Fragment Labels: -->
+    <string name="fragment_shop_location" translatable="false">shopLocationFragment</string>
+
+    <!-- 1) Error Strings: -->
+
+    <!-- 1.1) Shop Location Page: -->
+    <string name="error_shop_location_track_gps_location_fail">GPS Location Failed</string>
+    <string name="error_shop_location_track_gps_enable_fail">GPS Enabling Failed</string>
+    <string name="error_shop_location_track_gps_enable_cancel">GPS Enabling Cancelled</string>
+
+    <!-- 1) UI Strings: -->
+
+    <!-- 1.1) Shop Location Page -->
+    <string name="shop_location_nearest_shops">Nearest Shops</string>
+    <string name="shop_location_product_available_shops">Product available Shops</string>
+    <string name="shop_location_navigate">Navigate</string>
+    <string name="shop_location_no_product_id">No product id</string>
+    <string name="shop_location_distance">Distance: %1$s %2$s </string>
+    <string name="shop_location_do_you_want_to_navigate">Do you want to navigate to this location?</string>
+
+</resources>

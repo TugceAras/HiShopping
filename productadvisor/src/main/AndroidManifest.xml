@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hms.referenceapp.hishopping.productadvisor">
+
+    <application>
+        <service android:name="com.hms.referenceapp.hishopping.productadvisor.DataHandlerService" android:exported="false"/>
+        <meta-data
+            android:name="com.google.android.awareness.API_KEY"
+            android:value="AIzaSyD69Ocs7m0vXrAPtbOa8J9prdWzC5B_KzE"/>
+    </application>
+
+</manifest>

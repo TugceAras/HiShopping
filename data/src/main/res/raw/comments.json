@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "productId": 21,
+    "title": "Bu ne nasıl çanta",
+    "message": "Hiç güzel değil almayın",
+    "star": 1,
+    "author": "Oguz OZSOY",
+    "date": "23/11/2020",
+    "like": "7",
+    "dislike": "1"
+  },
+  {
+    "id": 2,
+    "productId": 21,
+    "title": "Ürünü beğenmedim geri iade ettim aklı olan almasın.",
+    "message": "Ürün paketlenmesi dışında sorunsuz.",
+    "star": 4,
+    "author": "Murat Çakır",
+    "date": "01/12/2020",
+    "like": "1",
+    "dislike": "5"
+  },
+  {
+    "id": 3,
+    "productId": 21,
+    "title": "",
+    "message": "Yani ne denilebilir ki baya beğendik ürünü..",
+    "star": 5,
+    "author": "İbrahim Çakır",
+    "date": "02/12/2020",
+    "like": "3",
+    "dislike": "0"
+  },
+  {
+    "id": 4,
+    "productId": 21,
+    "title": "",
+    "message": "Ürün fiyat/performans açısından bayağı iyi.",
+    "star": 4,
+    "author": "Ahmet Mümtaz Taylan",
+    "date": "02/02/2020",
+    "like": "2",
+    "dislike": "6"
+  }
+]

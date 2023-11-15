@@ -1,0 +1,47 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: 'scripts/dependencies.gradle'
+buildscript {
+    ext.kotlin_version = "1.5.30"
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://developer.huawei.com/repo/' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30"
+        def nav_version = "2.3.1"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0"
+        classpath 'com.huawei.agconnect:agcp:1.6.3.300'
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.38.1'
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.0"
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.8.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven {
+            url "http://jitpack.io/"
+            allowInsecureProtocol = true
+        }
+        mavenLocal()
+    }
+}
+
+ext {
+    common_mobile_services_version = '2.1'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

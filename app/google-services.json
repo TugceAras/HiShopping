@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "435325162902",
+    "firebase_url": "https://hishopping-30c4b.firebaseio.com",
+    "project_id": "hishopping-30c4b",
+    "storage_bucket": "hishopping-30c4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435325162902:android:c0efa0c795622079b8b9b7",
+        "android_client_info": {
+          "package_name": "com.hms.referenceapp.hishopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435325162902-9pp27ntl705rnjp9b602hrif2luad8jh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hms.referenceapp.hishopping",
+            "certificate_hash": "5be9a61782aa939c62430e551ef386644311e5c2"
+          }
+        },
+        {
+          "client_id": "435325162902-dcoje228k2pcr65p2grfhr6p35sl19qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMT_GUY23nu5n91JXk97nxhAokPRu-Di8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435325162902-dcoje228k2pcr65p2grfhr6p35sl19qa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

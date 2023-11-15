@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.hms.referenceapp.hishopping.signin.ui.signin.SignInFragment"
+        android:label="@string/fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_signInWithEmailFragment"
+            app:destination="@id/signInWithEmailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInWithEmailFragment"
+        android:name="com.hms.referenceapp.hishopping.signin.ui.email.signin.SignInWithEmailFragment"
+        android:label="@string/fragment_sign_in_with_email"
+        tools:layout="@layout/fragment_sign_in_with_email">
+        <argument
+            android:name="email"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="password"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_signInWithEmailFragment_to_resetPasswordFragment"
+            app:destination="@id/resetPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.hms.referenceapp.hishopping.signin.ui.email.password.reset.ResetPasswordFragment"
+        android:label="@string/fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password">
+        <action
+            android:id="@+id/action_resetPasswordFragment_to_resetPasswordWithCodeFragment"
+            app:destination="@id/resetPasswordWithCodeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordWithCodeFragment"
+        android:name="com.hms.referenceapp.hishopping.signin.ui.email.password.reset.ResetPasswordWithCodeFragment"
+        android:label="@string/fragment_reset_password_with_code"
+        tools:layout="@layout/fragment_reset_password_with_code">
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resetPasswordWithCodeFragment_to_signInWithEmailFragment"
+            app:destination="@id/signInWithEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.hms.referenceapp.hishopping.signin.ui.email.signup.SignUpFragment"
+        android:label="@string/fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_verifyCodeToSignUpFragment"
+            app:destination="@id/verifyCodeToSignUpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_signUpFragment_to_signInWithEmailFragment"
+            app:destination="@id/signInWithEmailFragment"
+            app:popUpTo="@id/signUpFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyCodeToSignUpFragment"
+        android:name="com.hms.referenceapp.hishopping.signin.ui.email.signup.VerifyCodeToSignUpFragment"
+        android:label="@string/fragment_verify_code_to_sign_up"
+        tools:layout="@layout/fragment_verify_code_to_sign_up">
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <argument
+            android:name="fullName"
+            app:argType="string" />
+    </fragment>
+</navigation>

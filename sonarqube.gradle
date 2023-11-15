@@ -1,0 +1,11 @@
+apply plugin: "org.sonarqube"
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "hishopping" // Don’t use space character.
+        property "sonar.projectName", "HiShopping" //web UI name
+        property "sonar.login", "74061cd5b3fbbf97746c8d96633da5396917ad25" //coming from before 1.2 step
+        property "sonar.host.url", "http://10.216.72.212:9000"
+        property "sonar.projectVersion", "1.1"
+    }
+}

@@ -1,0 +1,24 @@
+apply from: "$project.rootDir/base_use_case.gradle"
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+dependencies {
+    implementation libraries.constraintLayout
+    implementation libraries.recyclerView
+    implementation libraries.cardView
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUi
+    implementation libraries.activityKtx
+    implementation libraries.fragmentKtx
+    implementation libraries.coroutineCore
+    implementation libraries.coroutineAndroid
+
+    implementation libraries.hilt
+    kapt libraries.hiltCompiler
+
+    implementation libraries.cmsAwarenessKit
+
+    implementation project(':base')
+    implementation project(':core')
+    implementation project(':data')
+}

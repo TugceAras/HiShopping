@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Fragment Labels: -->
+    <string name="fragment_courier_track" translatable="false">courierTrackFragment</string>
+
+    <!-- 1) Error Strings: -->
+
+    <!-- 1.1) Courier Track Page -->
+    <string name="error_courier_track_gps_location_fail">GPS Location Failed</string>
+    <string name="error_courier_track_gps_enable_fail">GPS Enabling Failed</string>
+    <string name="error_courier_track_gps_enable_cancel">GPS Enabling Cancelled</string>
+
+    <!-- 1) UI Strings: -->
+
+    <!-- 1.0) General -->
+    <string name="congratulations">Congratulations</string>
+
+    <!-- 1.1) Courier Track Page -->
+    <string name="courier_track_cancel">Cancel</string>
+    <string name="courier_track_your_order_has_arrived">Your order has arrived.</string>
+
+</resources>

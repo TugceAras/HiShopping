@@ -1,0 +1,77 @@
+<resources>
+    <string name="facebook_app_id">391268885356294</string>
+    <string name="fb_login_protocol_scheme">fb391268885356294</string>
+    <string name="google_client_id">"435325162902-dcoje228k2pcr65p2grfhr6p35sl19qa.apps.googleusercontent.com"</string>
+    <string name="google_site_api_key">6Lc1bI4aAAAAANAFvWE2JL5Eg60k0y23eiQCaTpv</string>
+    <string name="app_id">103896847</string>
+
+    <!--Fragment Labels: -->
+    <string name="fragment_sign_in" translatable="false">signInFragment</string>
+    <string name="fragment_sign_in_with_email" translatable="false">signInWithEmailFragment</string>
+    <string name="fragment_reset_password" translatable="false">resetPasswordFragment</string>
+    <string name="fragment_reset_password_with_code" translatable="false">resetPasswordWithCodeFragment</string>
+    <string name="fragment_sign_up" translatable="false">signUpFragment</string>
+    <string name="fragment_verify_code_to_sign_up" translatable="false">verifyCodeToSignUpFragment</string>
+
+    <!-- 1) Error Strings: -->
+
+    <!-- 1.0) General -->
+    <string name="error_email_wrong_password_format_message">Password must be at least 8 characters long contain a number and an uppercase letter</string>
+    <string name="error_wrong_email_format_message">Invalid e-mail format. Please insert a valid e-mail</string>
+    <string name="error_invalid_full_name_message">Invalid full name. Please insert a valid full name</string>
+    <string name="error_user_has_been_registered_message">There is already a registered user with this e-mail address. Please sign in.</string>
+    <string name="error_verify_code_interval_limit_message">Too many attempts to get verification code. Please try again in a few minutes</string>
+    <string name="error_passwords_mismatch_message">The Passwords entered do not match</string>
+    <string name="error_wrong_verification_code_message">Invalid verification code</string>
+
+    <!-- 1.1) SignIn Page -->
+    <string name="error_sign_in_facebook_cancel">Facebook Login Cancelled</string>
+    <string name="error_sign_in_facebook_failed">Facebook Login Failed</string>
+
+    <!-- 1.2) SignIn With Email Page -->
+    <string name="error_sign_in_with_email_user_not_registered_message">There is no existing user with this e-mail. Please sign up.</string>
+    <string name="error_sign_in_with_email_password_email_mismatch_message">Wrong e-mail or password</string>
+    <string name="error_sign_in_with_email_interval_limit_message">Too many attempts have been made. Please try again in a few minutes.</string>
+
+    <!-- 1.3) Verify Code To SignUp Page -->
+    <string name="error_verify_code_to_sign_up_blank_verification_code">Verification code can not be empty</string>
+
+    <!-- 1) UI Strings: -->
+
+    <!-- 1.0) General -->
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="change">Change</string>
+    <string name="ok">OK</string>
+    <string name="full_name">Full Name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Password Confirm</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="continue_title">Continue</string>
+
+    <!-- 1.1) SignIn Page -->
+    <string name="sign_in_info_message">You can easily sign in with your accounts.</string>
+    <string name="sign_in_dont_have_account">Don\'t you have an account?</string>
+
+    <!-- 1.2) SignIn With Email Page -->
+    <string name="sign_in_with_email_forgot_password">I forgot my password</string>
+    <string name="sign_in_with_email_different_sign_in_method">Use different sign in method</string>
+
+    <!-- 1.3) SignUp Page -->
+    <string name="sign_up_do_you_have_account">Do you have an account?</string>
+    <string name="sign_up_success_dialog_message">Sign up success. You can sign in with your e-mail and password</string>
+
+    <!-- 1.4) Verify Code To SignUp Page -->
+    <string name="verify_code_to_sign_up_info">Please enter verification code sent to your e-mail</string>
+
+    <!-- 1.5) Reset Password With Code Page -->
+    <string name="reset_password_with_code_info_message">Please enter new password and verification code sent to your e-mail.</string>
+    <string name="reset_password_with_code_reset">Reset</string>
+    <string name="reset_password_with_link_success_dialog_message">You can reset yor password by clicking the link sent to your email.</string>
+
+    <!-- 1.6) Reset Password Page -->
+    <string name="reset_password_info_message">Please enter your e-mail to reset password.</string>
+
+
+</resources>

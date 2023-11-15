@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.hms.referenceapp.hishopping.data.model.CreditCard" />
+    </data>
+
+    <com.vinaygaba.creditcardview.CreditCardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/creditCardView"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/cardbackground_sky"
+        app:cardName="@{model.cardOwnerName}"
+        app:cardNumber="@{model.cardNumber}"
+        app:expiryDate="@{model.validUntil}"
+        app:type="auto">
+    </com.vinaygaba.creditcardview.CreditCardView>
+</layout>
+

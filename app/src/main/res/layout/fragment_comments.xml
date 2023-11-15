@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerViewComment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_3" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCommentStarTitleFive" />
+
+        <View
+            android:id="@+id/view_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerCommentLanguage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewStarAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewDivider"
+            tools:text="4.2"/>
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="#BFBFBF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toEndOf="@+id/imageViewCommentsAverageStar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCommentsAverageStar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewStarAverage"
+            app:layout_constraintStart_toEndOf="@+id/textViewStarAverage"
+            app:layout_constraintTop_toTopOf="@+id/textViewStarAverage"
+            app:srcCompat="@drawable/star_icon" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCommentsStarFive"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayoutCommentStarThree"
+            app:layout_constraintStart_toStartOf="@+id/linearLayoutCommentStarThree"
+            app:layout_constraintTop_toTopOf="@+id/viewDivider">
+
+            <View
+                android:id="@+id/viewCommentStarFiveStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="99"
+                android:background="@color/starColor" />
+
+            <View
+                android:id="@+id/viewCommentStarFiveEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#DCDCDC" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCommentStarFour"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayoutCommentStarThree"
+            app:layout_constraintStart_toStartOf="@+id/linearLayoutCommentStarThree"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCommentsStarFive">
+
+            <View
+                android:id="@+id/viewCommentStarFourStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="99"
+                android:background="@color/starColor" />
+
+            <View
+                android:id="@+id/viewCommentStarFourEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#DCDCDC" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCommentStarThree"
+            android:layout_width="170dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/viewDivider"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCommentStarFour">
+
+            <View
+                android:id="@+id/viewCommentStarThreeStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="99"
+                android:background="@color/starColor" />
+
+            <View
+                android:id="@+id/viewCommentStarThreeEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#DCDCDC" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCommentStarTwo"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayoutCommentStarThree"
+            app:layout_constraintStart_toStartOf="@+id/linearLayoutCommentStarThree"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCommentStarThree">
+
+            <View
+                android:id="@+id/viewCommentStarTwoStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="99"
+                android:background="@color/starColor" />
+
+            <View
+                android:id="@+id/viewCommentStarTwoEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#DCDCDC" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCommentStarOne"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayoutCommentStarTwo"
+            app:layout_constraintStart_toStartOf="@+id/linearLayoutCommentStarTwo"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCommentStarTwo">
+
+            <View
+                android:id="@+id/viewCommentStarOneStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="99"
+                android:background="@color/starColor" />
+
+            <View
+                android:id="@+id/viewCommentStarOneEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#DCDCDC" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCommentStarTitleFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_light"
+            android:text="@string/comment_5"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCommentsStarFive"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewCommentStarFive"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutCommentsStarFive" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCommentStarFive"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCommentsStarFive"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayoutCommentsStarFive"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutCommentsStarFive"
+            app:srcCompat="@drawable/star_icon" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCommentStarFour"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCommentStarFour"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewCommentStarFive"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayoutCommentsStarFive"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutCommentStarFour"
+            app:srcCompat="@drawable/star_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCommentStarTitleFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_light"
+            android:text="@string/comment_4"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCommentStarFour"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewCommentStarFive"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutCommentStarFour" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCommentStarThree"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCommentStarThree"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayoutCommentStarFour"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutCommentStarThree"
+            app:srcCompat="@drawable/star_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCommentStarTitleThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_light"
+            android:text="@string/comment_3"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCommentStarThree"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewCommentStarFive"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutCommentStarThree" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCommentStarTwo"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCommentStarTwo"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayoutCommentsStarFive"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutCommentStarTwo"
+            app:srcCompat="@drawable/star_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCommentStarTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_light"
+            android:text="@string/comment_2"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCommentStarTwo"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewCommentStarFive"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutCommentStarTwo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCommentStarOne"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCommentStarOne"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayoutCommentsStarFive"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutCommentStarOne"
+            app:srcCompat="@drawable/star_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCommentStarOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_light"
+            android:text="@string/comment_1"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCommentStarOne"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewCommentStarFive"
+            app:layout_constraintTop_toTopOf="@+id/linearLayoutCommentStarOne" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewComment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCommentAddComment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCommentLanguage"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/buttonCommentAddToCart"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="15dp"
+            android:text="@string/add_to_cart"
+            app:backgroundTint="#FFA500"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/ic_add_shopping_cart_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_2" />
+
+        <Button
+            android:id="@+id/buttonCommentAddComment"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="15dp"
+            android:text="@string/comment_add_comment"
+            android:textColor="#FFA500"
+            android:textSize="12sp"
+            app:backgroundTint="#E6E6E6"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/ic_baseline_add_comment_24"
+            app:iconTint="#FFA500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/view_2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerCommentLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="24dp"
+            android:spinnerMode="dropdown"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewDivider" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCommentComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerCommentLanguage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spinnerCommentLanguage"
+            tools:text="Comments(4)" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

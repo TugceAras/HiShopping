@@ -1,0 +1,37 @@
+<resources>
+
+    <!--Fragment Labels: -->
+    <string name="fragment_address" translatable="false">addressFragment</string>
+    <string name="fragment_map" translatable="false">mapFragment</string>
+    <string name="fragment_add" translatable="false">addFragment</string>
+    <string name="fragment_update" translatable="false">updateFragment</string>
+
+    <!-- 1) UI Strings: -->
+    <string name="unexpected_error">An error occurred</string>
+    <string name="unverified_address">Please check your address</string>
+
+    <!-- 1.1) Address Page -->
+    <string name="address_title">Title</string>
+    <string name="address_line">Address Line</string>
+    <string name="address_country">Country</string>
+    <string name="address_city">City</string>
+    <string name="address_building_no">Building No</string>
+    <string name="address_apt_no">Apt No</string>
+    <string name="address_identity_service">Select from identity service</string>
+    <string name="address_choose_map">Choose from map</string>
+    <string name="address_manually">Enter manually</string>
+    <string name="address_add_new_address">Add New Address</string>
+    <string name="address_my_addresses">My Addresses</string>
+
+    <!-- 1.2) Map Page -->
+    <string name="address_map_your_address">Your address</string>
+    <string name="address_map_this_location">Use This Location</string>
+
+    <!-- 1.3) Update Map Page -->
+    <string name="update_map_page">Update</string>
+
+    <!-- 1.4) Add Page -->
+    <string name="add_save">Save</string>
+
+
+</resources>

@@ -1,0 +1,33 @@
+apply from: "$project.rootDir/base_use_case.gradle"
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+android{
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation libraries.material
+    implementation libraries.navigationFragment
+
+    implementation libraries.constraintLayout
+    implementation libraries.navigationUi
+    implementation libraries.cardView
+
+    implementation libraries.hilt
+    kapt libraries.hiltCompiler
+
+    implementation libraries.coil
+    implementation libraries.simpleAnimationPopup
+    implementation libraries.creditCardView
+    implementation libraries.swipeRefreshLayout
+    implementation libraries.quickPermission
+    
+    api libraries.cmsCreditCardScannerKit
+
+    implementation project(":base")
+    implementation project(":core")
+    implementation project(":data")
+}

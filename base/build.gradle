@@ -1,0 +1,34 @@
+apply from: "$project.rootDir/base_use_case.gradle"
+apply plugin: 'kotlin-kapt'
+
+android{
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    // kotlin extensions
+    api libraries.activityKtx
+    api libraries.fragmentKtx
+
+    // coroutines
+    api libraries.coroutineCore
+    api libraries.coroutineAndroid
+
+    //lifecycle
+    api libraries.lifecycleRuntime
+    api libraries.lifecycleLivedata
+
+    //image loading
+    api libraries.coil
+
+    // inject annotation
+    api libraries.javaxInject
+
+    implementation libraries.hmsBase
+    implementation libraries.gmsBase
+
+    implementation project(':core')
+    api libraries.cmsCore
+}

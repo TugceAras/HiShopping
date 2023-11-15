@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Defacto 30% discount",
+    "description": "Get 30% discount between 23 - 29 November",
+    "image": "campaign_1"
+  },
+  {
+    "id": 2,
+    "title": "Inci shoes 50% discount",
+    "description": "Get 50% discount between 22 - 24 November",
+    "image": "campaign_2"
+  },
+  {
+    "id": 3,
+    "title": "Health Product",
+    "description": "New opportunities in healt product",
+    "image": "campaign_3"
+  },
+  {
+    "id": 4,
+    "title": "Home Products",
+    "description": "New opportunities in home product",
+    "image": "campaign_4"
+  }
+]

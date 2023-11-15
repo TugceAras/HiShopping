@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shop_location_nav_graph"
+    app:startDestination="@id/shopsLocation"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/shopsLocation"
+        android:name="com.hms.referenceapp.hishopping.shoplocations.presentation.ShopLocationFragment"
+        android:label="@string/fragment_shop_location"
+        tools:layout="@layout/fragment_shop_location">
+        <argument
+            android:name="locationType"
+            app:argType="com.hms.referenceapp.hishopping.shoplocations.presentation.LocationType" />
+        <argument
+            android:name="productId"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

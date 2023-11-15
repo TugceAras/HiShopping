@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_credit_cards_nav_graph"
+    app:startDestination="@id/myCreditCardsFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/myCreditCardsFragment"
+        android:name="com.hms.referenceapp.hishopping.mycreditcards.presentation.MyCreditCardsFragment"
+        android:label="@string/fragment_my_credit_cards"
+        tools:layout="@layout/fragment_my_credit_cards" >
+    </fragment>
+
+</navigation>

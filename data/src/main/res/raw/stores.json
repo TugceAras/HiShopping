@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "visible_name": "M2 Store 1",
+    "address": "M2 Store 1",
+    "location": {
+      "lat": -0.0021,
+      "lng": 0.0015
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/M2_icon.svg/768px-M2_icon.svg.png"
+  },
+
+  {
+    "id": 2,
+    "visible_name": "M2 Store 2",
+    "address": "M2 Store 2",
+    "location": {
+      "lat": 0.0031,
+      "lng": 0.0071
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/M2_icon.svg/768px-M2_icon.svg.png"
+  },
+
+  {
+    "id": 3,
+    "visible_name": "M2 Store 3",
+    "address": "M2 Store 3",
+    "location": {
+      "lat": 0.00095,
+      "lng": -0.0061
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/M2_icon.svg/768px-M2_icon.svg.png"
+  },
+
+  {
+    "id": 4,
+    "visible_name": "M2 Store 4",
+    "address": "M2 Store 4",
+    "location": {
+      "lat": -0.00225,
+      "lng": -0.00185
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/M2_icon.svg/768px-M2_icon.svg.png"
+  },
+
+  {
+    "id": 6,
+    "visible_name": "M2 Store 6",
+    "address": "M2 Store 6",
+    "location": {
+      "lat": 0.00055,
+      "lng": -0.00045
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/M2_icon.svg/768px-M2_icon.svg.png"
+  },
+
+  {
+    "id": 5,
+    "visible_name": "M2 Store 5",
+    "address": "M2 Store 5",
+    "location": {
+      "lat": -0.00085,
+      "lng": -0.00005
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/M2_icon.svg/768px-M2_icon.svg.png"
+  }
+
+]

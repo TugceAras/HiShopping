@@ -1,0 +1,14 @@
+<resources>
+
+    <!--Fragment Labels: -->
+    <string name="fragment_try_with_ar" translatable="false">tryWithArFragment</string>
+
+    <!-- 1) UI Strings: -->
+
+    <!-- 1.1) Try With AR Page -->
+    <string name="try_with_ar_product_price">%1$s TL</string>
+    <string name="try_with_ar_load">Load</string>
+    <string name="try_with_ar_detail">DETAIL</string>
+    <string name="try_with_ar_clear">clear</string>
+
+</resources>

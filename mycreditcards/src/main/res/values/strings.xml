@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Fragment Labels: -->
+    <string name="fragment_my_credit_cards" translatable="false">myCreditCardsFragment</string>
+
+    <!-- 1) UI Strings: -->
+
+    <!-- 1.0) General -->
+    <string name="cancel">Cancel</string>
+
+    <!-- 1.1) My Credit Cards Page -->
+    <string name="my_credit_cards_delete">Delete</string>
+    <string name="my_credit_cards_are_you_sure_to_delete">Are you sure to delete this card?</string>
+    <string name="my_credit_cards_could_not_detect">Could not detect!</string>
+
+</resources>

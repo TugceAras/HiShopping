@@ -1,0 +1,25 @@
+apply from: "$project.rootDir/base_use_case.gradle"
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'dagger.hilt.android.plugin'
+
+dependencies {
+    implementation libraries.cardView
+    implementation libraries.material
+    implementation libraries.constraintLayout
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUi
+
+    //hilt
+    implementation libraries.hilt
+    kapt libraries.hiltCompiler
+
+    implementation libraries.gson
+    implementation libraries.coil
+
+    implementation libraries.cmsSceneKit
+
+    implementation project(":base")
+    implementation project(":core")
+}

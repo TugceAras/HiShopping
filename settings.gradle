@@ -1,0 +1,13 @@
+include ':mycreditcards'
+include ':address'
+include ':trywithar'
+include ':data'
+include ':couriertrack'
+include ':shoplocations'
+include ':app'
+include ':base'
+include ':core'
+include ':signin'
+include ':productadvisor'
+rootProject.name = "HiShopping"
+

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutTryWithAr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutTryWithAr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewTryWithArIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/hishopblackicon"
+                app:layout_constraintDimensionRatio="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTryWithArBottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <FrameLayout
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp">
+
+                    <Space
+                        android:id="@+id/spaceTryWithArDetail"
+                        android:layout_width="90dp"
+                        android:layout_height="45dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonTryWithArLoad"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/try_with_ar_load"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="15sp"
+                        app:cornerRadius="20dp"
+                        app:strokeColor="@color/colorAcceptGreen"
+                        app:strokeWidth="1dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonTryWithArDetail"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/try_with_ar_detail"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="15sp"
+                        app:cornerRadius="20dp"
+                        app:strokeWidth="1dp" />
+                </FrameLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewTryWithArOpenMenu"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="15dp"
+                    android:background="@color/colorPrimaryDark"
+                    app:cardCornerRadius="60dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/open_menu"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="20dp"
+                        android:scaleType="centerCrop" />
+
+                </androidx.cardview.widget.CardView>
+
+                <FrameLayout
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp">
+
+                    <Space
+                        android:id="@+id/spaceTryWithArClear"
+                        android:layout_width="90dp"
+                        android:layout_height="45dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonTryWithArClear"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/try_with_ar_clear"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="15sp"
+                        app:cornerRadius="20dp"
+                        app:strokeColor="@color/colorDeclineRed"
+                        app:strokeWidth="1dp" />
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

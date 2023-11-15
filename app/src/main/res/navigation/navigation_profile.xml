@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_graph"
+    app:startDestination="@id/profile">
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.hms.referenceapp.hishopping.app.profile.ProfileFragment"
+        android:label="@string/fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_shopslocation"
+            app:destination="@id/shop_location_nav_graph">
+            <argument
+                android:name="locationType"
+                app:argType="com.hms.referenceapp.hishopping.shoplocations.presentation.LocationType" />
+        </action>
+        <action
+            android:id="@+id/action_profile_to_address"
+            app:destination="@+id/address_nav_graph">
+            <argument
+                android:name="user"
+                app:argType="com.hms.referenceapp.hishopping.data.model.User" />
+        </action>
+        <action
+            android:id="@+id/action_profile_to_profile_edit_nav"
+            app:destination="@id/profile_edit_nav" />
+        <action
+            android:id="@+id/action_profile_to_my_orders_graph"
+            app:destination="@id/my_orders_graph" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_edit_nav"
+        android:name="com.hms.referenceapp.hishopping.app.profileedit.presentation.ProfileEditFragment"
+        android:label="Profile Editing"
+        tools:layout="@layout/fragment_profile_edit" >
+    </fragment>
+
+    <include app:graph="@navigation/navigation_my_credit_cards" />
+    <include app:graph="@navigation/navigation_shop_locations" />
+    <include app:graph="@navigation/navigation_address" />
+    <include app:graph="@navigation/navigation_my_orders" />
+
+</navigation>

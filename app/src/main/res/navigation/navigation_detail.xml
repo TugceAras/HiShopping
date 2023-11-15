@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_nav_graph"
+    app:startDestination="@id/details">
+
+    <fragment
+        android:id="@+id/details"
+        android:name="com.hms.referenceapp.hishopping.app.details.detailbody.presentation.DetailsFragment"
+        android:label="@string/fragment_detail"
+        tools:layout="@layout/fragment_product_details">
+        <argument
+            android:name="productId"
+            app:argType="integer" />
+        <argument
+            android:name="animationId"
+            android:defaultValue="no_transition"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_details_to_try_with_ar_nav_graph"
+            app:destination="@id/navigationTryWithAr">
+            <argument
+                android:name="productId"
+                app:argType="integer" />
+        </action>
+
+        <action
+            android:id="@+id/action_details_to_comment_nav_graph"
+            app:destination="@id/all_comments"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="productId"
+                app:argType="integer" />
+        </action>
+
+        <action
+            android:id="@+id/action_details_to_shopslocation"
+            app:destination="@id/shop_location_nav_graph" >
+            <argument
+                android:name="locationType"
+                app:argType="com.hms.referenceapp.hishopping.shoplocations.presentation.LocationType" />
+            <argument
+                android:name="productId"
+                android:defaultValue="-1"
+                app:argType="integer" />
+        </action>
+
+        <action
+            android:id="@+id/action_detail_to_add_comment_nav_graph"
+            app:destination="@id/buttonCommentAddComment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+        <argument
+            android:name="productId"
+            app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_details_to_myCartFragment"
+            app:destination="@id/my_cart_graph" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/all_comments"
+        android:name="com.hms.referenceapp.hishopping.app.details.comments.presentation.CommentsFragment"
+        android:label="@string/fragment_comments"
+        tools:layout="@layout/fragment_comments">
+        <argument
+            android:name="productId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_comment_to_add_comment_nav_graph"
+            app:destination="@id/buttonCommentAddComment">
+            <argument
+                android:name="productId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/buttonCommentAddComment"
+        android:name="com.hms.referenceapp.hishopping.app.details.addcomment.presentation.AddCommentFragment"
+        android:label="AddCommentFragment"
+        tools:layout="@layout/fragment_add_comment" />
+
+    <include app:graph="@navigation/navigation_shop_locations" />
+    <include app:graph="@navigation/navigation_my_credit_cards" />
+    <include app:graph="@navigation/navigation_try_with_ar" />
+    <include app:graph="@navigation/navigation_my_cart" />
+
+
+</navigation>

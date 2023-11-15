@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f72af</color>
+    <color name="colorPrimaryDark">#112d4e</color>
+    <color name="colorAccent">#dbe2ef</color>
+    <color name="colorPrimaryLight">#dbe2ef</color>
+    <color name="searchTintColor">#686868</color>
+    <color name="backgroundColor">#F3F5F9</color>
+    <color name="fragmentBackground">#00112d4e</color>
+
+    <color name="textColor">#FF0266</color>
+</resources>

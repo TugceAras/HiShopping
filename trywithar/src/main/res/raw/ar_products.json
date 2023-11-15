@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "productId": 41,
+    "title": "1930's Louis Vuitton Hardside Suitcase",
+    "price": 2400,
+    "description": "1930's Louis Vuitton hardside suitcase, 70 size, in classic stamped monogram pattern with tacked leather trim surround in embossed LV stripe. Case is with reinforced brass mounted corners, brass wrapped sides at top, LV stamped rivets and classic lock and latch closure with yellow stitched vachetta leather handle. Interior is canvas lined retaining tag reading 'Louis Vuitton LV 772025 Paris 70 Champs-Elysees 149 New Bond St. London W Nice Jardin Alberti Lille 34 Rue Faidherbe', without interior tray. Lock reads with patent, Louis Vuitton, 149 New Bond Street London 70 Champs Elysees London 059923 Made in France, latches with LV stamp at front.  Includes key and luggage tag, which needs strap repaired,",
+    "category": "Suitcase",
+    "image": "https://p1.liveauctioneers.com/378/105284/53925455_1_x.jpg?auto=webp&format=pjpg&version=1497452510&width=310",
+    "params": {
+      "resourceName": "ARView/lv_bag.glb",
+      "scale": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "rotation": [
+        0.707,
+        0.0,
+        -0.500,
+        0.0
+      ],
+      "viewType": "AR_VIEW"
+    }
+  },
+  {
+    "id": 2,
+    "productId": 42,
+    "title": "Fiddle Leaf Fig Plant in Pot",
+    "price": 50,
+    "description": "Fiddle Leaf Fig is 1 of the most popular house plants on the market. Tough, adaptable and unique, it adds a dramatic flair to any indoor space. Its large, waxy leaves stand out in any room or space. Low maintenance and easy to grow, Fiddle Leaf Fig makes an excellent houseplant for gardeners in any part of the country.",
+    "category": "Indoor Plant",
+    "image": "https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2019/01/10-Best-Indoor-Plants-Gear-Patrol-umbrella.jpg?resize=480:*",
+    "params": {
+      "resourceName": "ARView/flower.glb",
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "viewType": "AR_VIEW"
+    }
+  },
+  {
+    "id": 3,
+    "productId": 43,
+    "title": "Horse Sculpture",
+    "price": 2500,
+    "description": "Hand crafted by artisians in Valencia Spain from fine porcelain\nShiney Glaze Finish\nA gift of Lladro porcelain sculpture will be treasured for generations to come\nOriental Inspiration\nLimited Edition Series",
+    "category": "Sculpture",
+    "image": "https://cdnb.artstation.com/p/assets/images/images/005/035/629/4k/jia-hao-horse-sculpture-comp-clay-02.jpg?1498174927",
+    "params": {
+      "resourceName": "ARView/sculpture_horse.glb",
+      "scale": [
+        0.0015,
+        0.0015,
+        0.0015
+      ],
+      "rotation": [
+        0.707,
+        0.0,
+        -0.500,
+        0.0
+      ],
+      "viewType": "AR_VIEW"
+    }
+  },
+  {
+    "id": 4,
+    "productId": 44,
+    "title": "Oriental Furniture 36 in. Floral Blue and White Porcelain Tung Chi Vase",
+    "price": 2800,
+    "description": "Authentic oriental design decorative Tung Chi Vase. Akin to those used in palaces and temples in Ming dynasty era China. Classic formal 19th century style American and European decor, as well as a modern casual, eclectic home decor accent.\nBeautiful Chinese porcelain\nTraditional temple design with narrow neck and wide rim\nHand painted\nOpening measures 5.75 in. dia.\nHigh quality construction\nElegant design",
+    "category": "Vase",
+    "image": "https://images.homedepot-static.com/productImages/972eaea1-164f-4733-8e1f-d08c1bbb2b77/svn/blue-white-vases-bw-36vase-bwfl-64_1000.jpg",
+    "params": {
+      "resourceName": "ARView/chinese_vase.glb",
+      "scale": [
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "rotation": [
+        0.707,
+        0.0,
+        -0.500,
+        0.0
+      ],
+      "viewType": "AR_VIEW"
+    }
+  },
+  {
+    "id": 5,
+    "productId": 45,
+    "title": "Mustang Sunglasses",
+    "price": 2400,
+    "description": "1930's Louis Vuitton hardside suitcase, 70 size, in classic stamped monogram pattern with tacked leather trim surround in embossed LV stripe. Case is with reinforced brass mounted corners, brass wrapped sides at top, LV stamped rivets and classic lock and latch closure with yellow stitched vachetta leather handle. Interior is canvas lined retaining tag reading 'Louis Vuitton LV 772025 Paris 70 Champs-Elysees 149 New Bond St. London W Nice Jardin Alberti Lille 34 Rue Faidherbe', without interior tray. Lock reads with patent, Louis Vuitton, 149 New Bond Street London 70 Champs Elysees London 059923 Made in France, latches with LV stamp at front.  Includes key and luggage tag, which needs strap repaired,",
+    "category": "Sunglasses",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZBvAW-_LHNfT3Lo62C1dUMwg3ZM2MKCA24g&usqp=CAU",
+    "params": {
+      "drawable": 0,
+      "texture": 0,
+      "resourceName": "FaceView/sunglasses_mustang.glb",
+      "position": [0.0, 1.5, -10.0],
+      "scale": [0.042, 0.042, 0.00001],
+      "rotation": [1.0, 0.0, 0.0, 0.0],
+      "viewType": "FACE_VIEW"
+    }
+  },
+  {
+    "id": 6,
+    "productId": 46,
+    "title": "Huawei P40",
+    "price": 1000,
+    "description": "Huawei P40 128GB",
+    "category": "Phone",
+    "image": "https://img01.huaweifile.com/eu/tr/huawei/pms/product/6901443376940/428_428_118110C1C89C3717369309DFFEC6976AA92CCD62CE9DE23Bmp.png",
+    "params": {
+      "resourceName": "SceneView/p40/phone1.gltf",
+      "specularEnvTexturePath": "SceneView/bgd_model_2.dds",
+      "diffuseEnvTexturePath": "SceneView/bgd_model_1.dds",
+      "skyboxPath": "SceneView/bgd_model_3.dds",
+      "viewType": "SCENE_VIEW"
+    }
+  }
+]

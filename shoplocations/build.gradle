@@ -1,0 +1,25 @@
+apply from: "$project.rootDir/base_use_case.gradle"
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+dependencies {
+    implementation libraries.material
+    implementation libraries.constraintLayout
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUi
+    implementation libraries.cardView
+
+    implementation libraries.hilt
+    kapt libraries.hiltCompiler
+
+    implementation libraries.simpleAnimationPopup
+
+    implementation libraries.cmsLocationKit
+    implementation libraries.cmsMapKit
+    implementation 'com.huawei.hms:hianalytics:6.6.0.300'
+
+    implementation project(path: ':data')
+    implementation project(":base")
+    implementation project(":core")
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "huawei",
+    "image": "huawei"
+  },
+  {
+    "id": 2,
+    "name": "heineken",
+    "image": "heineken"
+  },
+  {
+    "id": 3,
+    "name": "apple",
+    "image": "apple"
+  },
+  {
+    "id": 4,
+    "name": "asics",
+    "image": "asics"
+  },
+  {
+    "id": 5,
+    "name": "samsung",
+    "image": "samsung"
+  },
+  {
+    "id": 6,
+    "name": "adidas",
+    "image": "adidas"
+  },
+  {
+    "id": 7,
+    "name": "nike",
+    "image": "nike"
+  },
+  {
+    "id": 8,
+    "name": "uniqlo",
+    "image": "uniqlo"
+  }
+]

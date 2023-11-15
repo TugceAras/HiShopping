@@ -1,0 +1,130 @@
+ext {
+
+    versions = [
+            //Android
+            kotlin_version                : '1.5.30',
+            constraint_layout_version     : '2.1.3',
+            material_version              : '1.2.1',
+            card_view_version             : '1.0.0',
+            recycler_view_version         : '1.1.0',
+            coroutine_version             : '1.3.9',
+            room_version                  : '2.4.2',
+            hilt_version                  : '2.38.1',
+            navigation_version            : '2.3.1',
+
+            activity_ktx_version          : '1.4.0',
+            fragment_ktx_version          : '1.4.1',
+
+            gms_base_version              : '17.5.0',
+            hms_base_version              : '5.0.0.300',
+            agconnect_version             : '1.4.1.300',
+            cloud_db_version              : '1.5.0.300',
+            cms_version                   : '2.1',
+            push_version                  : '6.5.0.300',
+            cloud_function_version        : '1.7.0.300',
+            lifecycle_version             : '2.2.0',
+
+            //other libraries
+            gson_version                  : '2.9.0',
+            coil_version                  : '2.0.0-rc01',
+            facebook_version              : '5.15.3',
+            simple_animation_popup_version: '1.2.5',
+            quick_permission              : '0.4.1',
+            page_indicator_view_version   : '1.0.3',
+            ar_device_names_version       : '2.0.0',
+            swipe_refresh_layout_version  : '1.1.0',
+            credit_card_view              : '1.0.4',
+            moshi_version                 : '1.13.0',
+            hawk_version                  : '2.0.1',
+            timber_version                : '5.0.1',
+            spinkit_version               : '1.4.0',
+    ]
+
+    libraries = [
+            //Android
+            kotlinStdLib           : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin_version}",
+            constraintLayout       : "androidx.constraintlayout:constraintlayout:${versions.constraint_layout_version}",
+            cardView               : "androidx.cardview:cardview:${versions.card_view_version}",
+            material               : "com.google.android.material:material:${versions.material_version}",
+            recyclerView           : "androidx.recyclerview:recyclerview:${versions.recycler_view_version}",
+            coroutineCore          : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutine_version}",
+            coroutineAndroid       : "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutine_version}",
+
+            hmsBase                : "com.huawei.hms:base:${versions.hms_base_version}",
+            gmsBase                : "com.google.android.gms:play-services-base:${versions.gms_base_version}",
+
+            //navigation
+            navigationFragment     : "androidx.navigation:navigation-fragment-ktx:${versions.navigation_version}",
+            navigationUi           : "androidx.navigation:navigation-ui-ktx:${versions.navigation_version}",
+
+            //lifecycle
+            lifecycleExtensions    : "androidx.lifecycle:lifecycle-extensions:${versions.lifecycle_version}",
+            lifecycleViewModel     : "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle_version}",
+            lifecycleRuntime       : "androidx.lifecycle:lifecycle-runtime-ktx:${versions.lifecycle_version}",
+            lifecycleLivedata      : "androidx.lifecycle:lifecycle-livedata-ktx:${versions.lifecycle_version}",
+
+            //di
+            hilt                   : "com.google.dagger:hilt-android:${versions.hilt_version}",
+            hiltCompiler           : "com.google.dagger:hilt-compiler:${versions.hilt_version}",
+
+            //extensions
+            activityKtx            : "androidx.activity:activity-ktx:${versions.activity_ktx_version}",
+            fragmentKtx            : "androidx.fragment:fragment-ktx:${versions.fragment_ktx_version}",
+
+            //other libraries
+            gson                   : "com.google.code.gson:gson:${versions.gson_version}",
+            coil                   : "io.coil-kt:coil:${versions.coil_version}",
+            facebookLogin          : "com.facebook.android:facebook-login:${versions.facebook_version}",
+            simpleAnimationPopup   : "com.github.alperenbabagil:simpleanimationpopup:${versions.simple_animation_popup_version}",
+            quickPermission        : "com.github.quickpermissions:quickpermissions-kotlin:${versions.quick_permission}",
+            swipeRefreshLayout     : "androidx.swiperefreshlayout:swiperefreshlayout:${versions.swipe_refresh_layout_version}",
+            creditCardView         : "com.vinaygaba:creditcardview:${versions.credit_card_view}",
+            /** implementation */
+            roomRuntime            : "androidx.room:room-runtime:${versions.room_version}",
+            /** annotationProcessor */
+            roomCompiler           : "androidx.room:room-compiler:${versions.room_version}",
+            moshi                  : "com.squareup.moshi:moshi:${versions.moshi_version}",
+            moshiKotlin            : "com.squareup.moshi:moshi-kotlin:${versions.moshi_version}",
+            hawk                   : "com.orhanobut:hawk:${versions.hawk_version}",
+            javaxInject            : "javax.inject:javax.inject:1@jar",
+            pageIndicatorView      : "com.romandanylyk:pageindicatorview:${versions.page_indicator_view_version}",
+            arDeviceNames          : "com.jaredrummler:android-device-names:${versions.ar_device_names_version}",
+            timber                 : "com.jakewharton.timber:timber:${versions.timber_version}",
+            spinkit                :"com.github.ybq:Android-SpinKit:${versions.spinkit_version}",
+
+            //CMS
+            cmsCore                : "com.github.Explore-In-HMS.common-mobile-services:core:${versions.cms_version}",
+            cmsSceneKit            : "com.github.Explore-In-HMS.common-mobile-services:scene:${versions.cms_version}",
+            cmsAuthKit             : "com.github.Explore-In-HMS.common-mobile-services:auth:${versions.cms_version}",
+            cmsAccountKit          : "com.github.Explore-In-HMS.common-mobile-services:account:${versions.cms_version}",
+            cmsSafetyKit           : "com.github.Explore-In-HMS.common-mobile-services:safety:${versions.cms_version}",
+            cmsLocationKit         : "com.github.Explore-In-HMS.common-mobile-services:location:${versions.cms_version}",
+            cmsMapKit              : "com.github.Explore-In-HMS.common-mobile-services:mapkit:${versions.cms_version}",
+            cmsAnalyticsKit        : "com.github.Explore-In-HMS.common-mobile-services:analytics:${versions.cms_version}",
+            cmsAwarenessKit        : "com.github.Explore-In-HMS.common-mobile-services:awareness:${versions.cms_version}",
+            cmsCreditCardScannerKit: "com.github.Explore-In-HMS.common-mobile-services:creditcardscanner:${versions.cms_version}",
+            cmsPushKit             : "com.github.Explore-In-HMS.common-mobile-services:push:${versions.cms_version}",
+            cmsCrashKit            : "com.github.Explore-In-HMS.common-mobile-services:crash:${versions.cms_version}",
+            cmsTranslateKit        : "com.github.Explore-In-HMS.common-mobile-services:translate:${versions.cms_version}",
+            cmsSpeechtotextKit     : "com.github.Explore-In-HMS.common-mobile-services:speechtotext:${versions.cms_version}",
+            cmsScanKit             : "com.github.Explore-In-HMS.common-mobile-services:scan:${versions.cms_version}",
+            cmsIdentityKit         : "com.github.Explore-In-HMS.common-mobile-services:identity:${versions.cms_version}",
+            cloudDb                : "com.huawei.agconnect:agconnect-cloud-database:${versions.cloud_db_version}",
+            pushService            : "com.huawei.hms:push:${versions.push_version}",
+            cloudFunction          : "com.huawei.agconnect:agconnect-function-ktx:${versions.cloud_function_version}",
+            agConnectCore          : "com.huawei.agconnect:agconnect-core:${versions.cloud_db_version}",
+            agconnectAppMessaging  : "com.huawei.agconnect:agconnect-appmessaging:${versions.agconnect_version}",
+            agconnectRemoteConfig  : "com.huawei.agconnect:agconnect-remoteconfig:${versions.agconnect_version}",
+    ]
+
+    testLibraries = [
+            junit       : "junit:junit:4.12",
+            androidJunit: "androidx.test.ext:junit:1.1.1",
+            espresso    : "androidx.test.espresso:espresso-core:3.3.0",
+    ]
+
+    plugins = [
+            hiltId       : "dagger.hilt.android.plugin",
+            hiltClasspath: "com.google.dagger:hilt-android-gradle-plugin:${versions.hilt_version}",
+    ]
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutStores"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="2dp"
+    android:background="@android:color/white"
+    android:padding="2dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewStoresShopLocationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textViewStoresShopLocationDistance"
+        app:layout_constraintEnd_toStartOf="@id/buttonStoresNavigate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        tool:text="Store 1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewStoresShopLocationDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonStoresNavigate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewStoresShopLocationTitle"
+        tool:text="549 m" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonStoresNavigate"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:drawableEnd="@drawable/ic_baseline_navigation_24"
+        android:drawableTint="@android:color/white"
+        android:text="@string/shop_location_navigate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

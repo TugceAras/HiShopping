@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/courier_track_nav_graph"
+    app:startDestination="@id/courier_track"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/courier_track"
+        android:name="com.hms.referenceapp.hishopping.couriertrack.presentation.CourierTrackFragment"
+        android:label="@string/fragment_courier_track"
+        tools:layout="@layout/fragment_courier_track" >
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+        <argument
+            android:name="orderEntity"
+            app:argType="com.hms.referenceapp.hishopping.data.model.OrderEntity" />
+    </fragment>
+
+</navigation>

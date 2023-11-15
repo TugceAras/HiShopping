@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutStores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.hms.lib.commonmobileservices.mapkit.CommonMapView
+                android:id="@+id/mapViewStores"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:hms_api_key="@string/hms_api_key"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/storesBottomSheetLayout"
+            layout="@layout/layout_bottom_sheet_stores" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

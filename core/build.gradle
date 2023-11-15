@@ -1,0 +1,12 @@
+apply from: "$project.rootDir/base_use_case.gradle"
+
+dependencies {
+    implementation libraries.material
+    implementation libraries.hmsBase
+    implementation libraries.gmsBase
+    implementation libraries.constraintLayout
+    implementation libraries.spinkit
+    //implementation 'com.google.android.material:material:1.2.1'
+    //implementation 'com.huawei.hms:base:5.0.0.300'
+    //implementation 'com.google.android.gms:play-services-base:17.5.0'
+}

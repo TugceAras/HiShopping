@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/explore_graph"
+    app:startDestination="@id/explore"
+    >
+
+    <fragment
+        android:id="@+id/explore"
+        android:name="com.hms.referenceapp.hishopping.app.explore.ExploreFragment"
+        android:label="@string/fragment_explore"
+        tools:layout="@layout/fragment_explore">
+        <action
+            android:id="@+id/action_explore_to_search"
+            app:destination="@id/search" />
+        <action
+            android:id="@+id/action_explore_to_detail_nav_graph"
+            app:destination="@id/detail_nav_graph">
+            <argument
+                android:name="productId"
+                app:argType="integer" />
+            <argument
+                android:name="animationId"
+                android:defaultValue="no_transition"
+                app:argType="string"
+                app:nullable="true" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/search"
+        android:name="com.hms.referenceapp.hishopping.app.search.presentation.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/action_search_to_detail_nav_graph"
+            app:destination="@id/detail_nav_graph">
+        <argument
+            android:name="productId"
+            app:argType="integer" />
+        <argument
+            android:name="animationId"
+            android:defaultValue="no_transition"
+            app:argType="string"
+            app:nullable="true" />
+        </action>
+    </fragment>
+
+    <include app:graph="@navigation/navigation_detail" />
+
+
+</navigation>

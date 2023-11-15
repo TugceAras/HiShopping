@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:padding="10dp"
+                android:text="@string/address_my_addresses"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:elevation="1dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:padding="10dp"
+                android:text="@string/address_add_new_address"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:elevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/containerIdentity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imageViewAddressIdentityIcon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/separatorIdentity"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/separatorIdentity"
+                            app:srcCompat="@drawable/ic_baseline_menu_book_24" />
+
+                        <View
+                            android:id="@+id/separatorIdentity"
+                            android:layout_width="1dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="8dp"
+                            android:background="#DEDEDE"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageViewAddressIdentityAdd"
+                            app:layout_constraintStart_toEndOf="@id/imageViewAddressIdentityIcon"
+                            app:layout_constraintTop_toTopOf="@+id/textViewAddressIdentityType" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textViewAddressIdentityType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="@string/address_identity_service"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageViewAddressIdentityAdd"
+                            app:layout_constraintEnd_toStartOf="@+id/imageViewAddressIdentityAdd"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@id/separatorIdentity"
+                            app:layout_constraintTop_toTopOf="@+id/imageViewAddressIdentityAdd" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imageViewAddressIdentityAdd"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_baseline_navigate_next_24"
+                            app:layout_constraintBottom_toTopOf="@+id/textViewAddressIdentityType"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageViewAddressIdentityIcon" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:id="@+id/viewIdentitySeparator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:background="#DEDEDE"
+                        android:visibility="gone" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/containerMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imageViewAddressMapIcon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_baseline_map_24"
+                            app:layout_constraintBottom_toBottomOf="@+id/separatorMap"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/separatorMap" />
+
+                        <View
+                            android:id="@+id/separatorMap"
+                            android:layout_width="1dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="8dp"
+                            android:background="#DEDEDE"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageViewAddressMapAdd"
+                            app:layout_constraintStart_toEndOf="@id/imageViewAddressMapIcon"
+                            app:layout_constraintTop_toTopOf="@+id/textViewAddressMapType" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textViewAddressMapType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="@string/address_choose_map"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageViewAddressMapAdd"
+                            app:layout_constraintEnd_toStartOf="@+id/imageViewAddressMapAdd"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@id/separatorMap"
+                            app:layout_constraintTop_toTopOf="@+id/imageViewAddressMapAdd" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imageViewAddressMapAdd"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_baseline_navigate_next_24"
+                            app:layout_constraintBottom_toTopOf="@+id/textViewAddressMapType"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageViewAddressMapIcon" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:background="#DEDEDE" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/containerManuel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imageViewAddressManuelIcon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_baseline_keyboard_24"
+                            app:layout_constraintBottom_toBottomOf="@+id/separatorManuel"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/separatorManuel" />
+
+                        <View
+                            android:id="@+id/separatorManuel"
+                            android:layout_width="1dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="8dp"
+                            android:background="#DEDEDE"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageViewAddressManuelAdd"
+                            app:layout_constraintStart_toEndOf="@id/imageViewAddressManuelIcon"
+                            app:layout_constraintTop_toTopOf="@+id/textViewAddressManuelType" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textViewAddressManuelType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="@string/address_manually"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageViewAddressManuelAdd"
+                            app:layout_constraintEnd_toStartOf="@+id/imageViewAddressManuelAdd"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@id/separatorManuel"
+                            app:layout_constraintTop_toTopOf="@+id/imageViewAddressManuelAdd" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imageViewAddressManuelAdd"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/ic_baseline_navigate_next_24"
+                            app:layout_constraintBottom_toTopOf="@+id/textViewAddressManuelType"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageViewAddressManuelIcon" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

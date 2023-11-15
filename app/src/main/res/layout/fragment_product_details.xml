@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewProductDetails"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:alpha="1"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerProductDetailsProductIntro"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:visibility="invisible" />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/pageIndicatorViewProductDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewProductDetails"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:piv_animationType="scale"
+            app:piv_dynamicCount="true"
+            app:piv_interactiveAnimation="true"
+            app:piv_padding="8dp"
+            app:piv_radius="4dp"
+            app:piv_selectedColor="@color/starColor"
+            app:piv_unselectedColor="@color/searchTintColor"
+            app:piv_viewPager="@id/viewPagerProductDetailsProductIntro" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bottomSheetProductDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTextWhite"
+                android:fitsSystemWindows="false"
+                app:behavior_hideable="false"
+                app:behavior_peekHeight="200dp"
+                app:cardElevation="25dp"
+                app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+                <include
+                    android:id="@+id/detail_bottom_sheet"
+                    layout="@layout/product_detail_bottom_sheet" />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

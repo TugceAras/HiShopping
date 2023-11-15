@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/address_nav_graph"
+    app:startDestination="@id/addressFragment">
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.hms.referenceapp.hishopping.address.presentation.addresses.AddressFragment"
+        android:label="@string/fragment_address"
+        tools:layout="@layout/fragment_address">
+
+        <action
+            android:id="@+id/action_addressFragment_to_mapFragment"
+            app:destination="@id/mapFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_addressFragment_to_addFragment"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_addressFragment_to_updateFragment"
+            app:destination="@id/updateFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="user"
+            app:argType="com.hms.referenceapp.hishopping.data.model.User" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.hms.referenceapp.hishopping.address.presentation.map.MapFragment"
+        android:label="@string/fragment_map"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_mapFragment_to_addFragment"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.hms.referenceapp.hishopping.address.presentation.add.AddFragment"
+        android:label="@string/fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <argument
+            android:name="address"
+            app:argType="com.hms.referenceapp.hishopping.data.model.UserAddress"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_addFragment_pop_including_addressFragment"
+            app:popUpTo="@id/addressFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.hms.referenceapp.hishopping.address.presentation.update.UpdateFragment"
+        android:label="@string/fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <argument
+            android:name="address"
+            app:argType="com.hms.referenceapp.hishopping.data.model.UserAddress"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_updateFragment_pop_including_addressFragment"
+            app:popUpTo="@id/addressFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+</navigation>

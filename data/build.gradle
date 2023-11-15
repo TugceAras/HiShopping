@@ -1,0 +1,32 @@
+apply from: "$project.rootDir/base_use_case.gradle"
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'dagger.hilt.android.plugin'
+
+android {
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    implementation libraries.roomRuntime
+    annotationProcessor libraries.roomCompiler
+
+    //hilt
+    implementation libraries.hilt
+    kapt libraries.hiltCompiler
+
+    implementation libraries.gson
+    implementation libraries.moshi
+    implementation libraries.moshiKotlin
+    implementation libraries.hawk
+    implementation libraries.timber
+
+    implementation libraries.cloudDb
+    implementation libraries.agConnectCore
+
+    implementation project(':base')
+    implementation project(':core')
+}

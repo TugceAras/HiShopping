@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favorites_graph"
+    app:startDestination="@id/favorites">
+
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.hms.referenceapp.hishopping.app.favorites.presentation.FavoritesFragment"
+        android:label="FavoritesFragment" >
+    </fragment>
+</navigation>

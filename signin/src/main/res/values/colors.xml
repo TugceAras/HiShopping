@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorWarning">#CF0C2D</color>
+
+    <color name="colorHuaweiBackground">#CF0C2D</color>
+    <color name="colorGoogleBackground">#CD0C2D</color>
+    <color name="colorFacebookBackground">#1877F2</color>
+    <color name="colorEmailBackground">#3C6499</color>
+</resources>
