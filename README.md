@@ -536,6 +536,7 @@ To download and install Hi Shopping application you can download;
 -   Sabrina Cara
 -   Berk Avcioglu
 -   Mustafa Kemal Ozdemir
+-   Tuğçe Aras
 
 
 
