@@ -17,7 +17,11 @@ HUAWEI Awareness Kit provides your app with the ability to obtain contextual inf
 Awareness service enables the user to reach the products more effectively and easily. This app can gain insight into a user's current situation more efficiently, making it possible to deliver a smarter, more considerate user experience.
 ### c. Screenshots & Gifs Files
 
+<!---
 <img src="https://user-images.githubusercontent.com/26767657/112137816-cab9aa80-8be1-11eb-8f2a-3a74518379cd.gif" width=250px>
+-->
+
+<img src="https://github.com/TugceAras/HiShopping/assets/79931228/21734bb3-4592-4903-9418-33d3693b90fd" width=250px>
    
 ### d.	Limitations & Future Works
 
@@ -45,6 +49,7 @@ Most apps need to identify and authenticate users to provide better user experie
 This use case allows users to sign into applications with their desired accounts without filling long forms. On the other hand, developers can focus their applications instead of making extra effort to handle sign in process, user authentication and securely store user information.
 ### c. Screenshots & Gifs Files
 
+<!---
 <table>
   <tbody>
     <tr>
@@ -53,6 +58,10 @@ This use case allows users to sign into applications with their desired accounts
     </tr>
   </tbody>
  </table>
+ -->
+
+<img src="https://github.com/TugceAras/HiShopping/assets/79931228/a8b43a77-4b83-49a8-a1f4-29e22a3e0562" width=250px>
+
    
 ### d.	Limitations & Future Works
 
@@ -164,7 +173,11 @@ The map of stores near you shows the user's location in the map application, and
 When you select “stores” on the profile page, the map page opens. You can see your location and the stores closest to you. If you click a location in the list or the navigation button, you are redirected to the device's default navigation app to see navigation in the selected store, and on Huawei devices, you are redirected to Petal Maps. Referral to physical stores is provided for products that are not in stock online.
 ### c. Screenshots & Gifs Files
 
+<!---
 <img src="https://user-images.githubusercontent.com/26767657/112143720-52ef7e00-8be9-11eb-8b0d-0cb885ce7c18.gif" width=250px>
+-->
+
+<img src="https://github.com/TugceAras/HiShopping/assets/79931228/a3a79d00-29d2-4678-bed0-6833b5489ffc" width=250px>
    
 ### d.	Limitations & Future Works
 
